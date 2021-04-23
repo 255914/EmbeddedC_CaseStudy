@@ -1,1 +1,1 @@
-@mainpage CaseStudy Example by Souhardya Sengupta @subpage project_main.c
+@mainpage Blinky Example by Bharath G @subpage project_main.c
