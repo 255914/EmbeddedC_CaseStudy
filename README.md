@@ -8,5 +8,6 @@ Activities for Essentials of Embedded Systems
     -  Heater will check the heater button is ON.
 <p>Accordingly, display the status in the LED Actuator which acts like the dashboard of the car
     - Led Actuator shows the driver is seated.
+<p> Simulink Diagram:
 ![ActivityOne](https://user-images.githubusercontent.com/80656121/115888540-a9620d80-a470-11eb-8d03-f7eb77136d31.PNG)
 
