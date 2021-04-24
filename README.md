@@ -15,3 +15,8 @@ Activities for Essentials of Embedded Systems
     
 ![ActivityOne](https://user-images.githubusercontent.com/80656121/115946531-7a36b500-a4df-11eb-8297-46d00c3f8a93.PNG)
 
+#### CI and Code Quality
+
+|Build|Cppcheck|Codacy|
+|:--:|:--:|:--:|
+|[![Compile-Linux](https://github.com/255914/EmbeddedC_CaseStudy/actions/workflows/Compile.yml/badge.svg)](https://github.com/255914/EmbeddedC_CaseStudy/actions/workflows/Compile.yml)| [![Cppcheck](https://github.com/255914/EmbeddedC_CaseStudy/actions/workflows/CodeQuality.yml/badge.svg)](https://github.com/255914/EmbeddedC_CaseStudy/actions/workflows/CodeQuality.yml)||
