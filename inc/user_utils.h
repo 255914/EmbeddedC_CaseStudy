@@ -2,7 +2,7 @@
 #define __USER_UTILS_H__
 /**
  * @file user_utils.h
- * @author Bharath.G ()
+ * @author Souhardya Sengupta ()
  * @brief User defined utilities used across the project
  * @version 0.1
  * @date 2021-04-23
@@ -20,5 +20,10 @@
  * 
  */
 void delay_ms(uint32_t delay_time);
+/**
+ * @brief Function to change LED Actuator status as per to the requirement in activity One
+ * 
+ */
+void activityOne(void);
 
 #endif /* __USER_UTILS_H__ */
