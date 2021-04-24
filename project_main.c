@@ -1,6 +1,6 @@
 /**
  * @file project_main.c
- * @author Bharath.G ()
+ * @author Souhardya Sengupta ()
  * @brief Project to Blink an LED at 1000ms ON and 500 ms OFF Interval
  * @version 0.1
  * @date 2021-04-23
@@ -41,13 +41,18 @@ int main(void)
 	/* Initialize Peripherals */
 	peripheral_init();
 
-	for(;;)
+	/*for(;;)
 	{
         change_led_state(LED_ON);
 		delay_ms(LED_ON_TIME);
 		
         change_led_state(LED_OFF);
 		delay_ms(LED_OFF_TIME);	
-	}
+	}*/
+	/**
+	 * @brief Construct a new activity One object
+	 * 
+	 */
+	activityOne();
 	return 0;
 }

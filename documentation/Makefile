@@ -1,5 +1,5 @@
   
-DOXY_FILE = Blinky
+DOXY_FILE = activityOne
 doc:
 	doxygen ./$(DOXY_FILE)
 
