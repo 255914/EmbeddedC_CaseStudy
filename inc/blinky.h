@@ -2,7 +2,7 @@
 #define __BLINKY_H_
 /**
  * @file blinky.h
- * @author Bharath.G ()
+ * @author Souhardya Sengupta ()
  * @brief Project to Blink an LED connected to AVR328 MCU GPIO Pin
  * @version 0.1
  * @date 2021-04-21
