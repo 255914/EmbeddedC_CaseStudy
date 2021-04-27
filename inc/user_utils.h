@@ -25,5 +25,16 @@ void delay_ms(uint32_t delay_time);
  * 
  */
 void activityOne(void);
-
+/**
+ * @brief 
+ * Function used to read values from a channel 
+ * @param channel no.
+ * @return uint16_t 
+ */
+uint16_t ReadADC(uint8_t channel);
+/**
+ * @brief 
+ * Function used to initialize ADC
+ */
+void InitADC();
 #endif /* __USER_UTILS_H__ */
