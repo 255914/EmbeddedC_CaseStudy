@@ -5,7 +5,8 @@ BUILD_DIR = Build
 # All Source code files
 SRC = project_main.c\
 src/user_utils.c\
-src/activityone_main.c
+src/activityone_main.c\
+src/activitytwo_main.c
 # All header file paths
 INC = -I inc
 
