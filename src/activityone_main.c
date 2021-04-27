@@ -1,6 +1,6 @@
 /**
  * @file ActivityOneMain.c
- * @author Souhardya Sengupta (senguptasouhardya@gmail.com)
+ * @author Souhardya Sengupta ()
  * @brief 
  * The Activity One has two tasks:
  * 1. To check the status of the Button Sensor
