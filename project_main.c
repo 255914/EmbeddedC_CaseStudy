@@ -1,33 +1,15 @@
 /**
  * @file project_main.c
- * @author Souhardya Sengupta ()
- * @brief Project to Blink an LED at 1000ms ON and 500 ms OFF Interval
+ * @author Souhardya Sengupta
+ * @brief Activities in Embedded Case Study
  * @version 0.1
  * @date 2021-04-23
  * 
  * @copyright Copyright (c) 2021
  * 
  */
-#include "project_config.h"
-
-#include "user_utils.h"
-#include "blinky.h"
-
-/**
- * @brief Initialize all the Peripherals and pin configurations
- * 
- */
-void peripheral_init(void)
-{
-	/* Configure LED Pin */
-	DDRB |= (1 << DDB0);
-}
-
-void change_led_state(uint8_t state)
-{
-	LED_PORT = (state << LED_PIN);
-}
-
+#include "activity1.h"
+#include "activity2.h"
 
 /**
  * @brief Main function where the code execution starts
@@ -37,22 +19,16 @@ void change_led_state(uint8_t state)
  * @note PORTB0 is in sink config. i.e when pin is High, the LED will turn ON
  */
 int main(void)
-{
-	/* Initialize Peripherals */
-	peripheral_init();
-
-	/*for(;;)
-	{
-        change_led_state(LED_ON);
-		delay_ms(LED_ON_TIME);
-		
-        change_led_state(LED_OFF);
-		delay_ms(LED_OFF_TIME);	
-	}*/
+{ 
 	/**
-	 * @brief Construct a new activity One object
-	 * 
+	 * @brief Construct a new Initialize Peripherals object
+	 *  Initializing Peripherals 
 	 */
-	activityOne();
+	InitializePeripherals();
+	/**
+	 * @brief 
+	 * Turns LED ON if and only if both switches ButtonSensor and Heater are closed
+	 */
+	StatusOfLedActuator();
 	return 0;
 }
