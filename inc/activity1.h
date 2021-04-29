@@ -38,8 +38,9 @@
 /**
  * @brief Function to change LED status according to the user requirement in activity1
  * 
+ * @return FLAG
  */
-void StatusOfLedActuator(void);
+uint8_t StatusOfLedActuator(void);
 
 /**
  * @brief Function to initialize peripherals of microcontroller
