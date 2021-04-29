@@ -1,12 +1,4 @@
 #include "activity1.h"
-#include "activity2.h"
-#include "activity3.h"
-
-void ChangeLEDState(uint8_t state)
-{
-	LED_PORT = (state << LED_PIN);
-}
-
 
 void DelayMilliSecond(uint32_t delay_time)
 {
@@ -17,9 +9,9 @@ void DelayMilliSecond(uint32_t delay_time)
 	}
 }
 
-void SetHeaterSensorPin(void)
+void ChangeLEDState(uint8_t state)
 {
-	HEATER_SENSOR_PORT |= (1 << HEATER_SENSOR_PIN);
+	LED_PORT = (state << LED_PIN);
 }
 
 void SetButtonSensorPin(void)
@@ -27,7 +19,10 @@ void SetButtonSensorPin(void)
 	BUTTON_SENSOR_PORT |= (1 << BUTTON_SENSOR_PIN);
 }
 
-
+void SetHeaterSensorPin(void)
+{
+	HEATER_SENSOR_PORT |= (1 << HEATER_SENSOR_PIN);
+}
 
 void InitializePeripherals(void)
 {
@@ -39,24 +34,26 @@ void InitializePeripherals(void)
     SetHeaterSensorPin();
 }
 
-void StatusOfLedActuator(void)
+uint8_t StatusOfLedActuator(void)
 {   
-    uint16_t Temperature=0, ADCchannel=0;
-    InitializeADC();
-    InitializePWM();
+    uint8_t FLAG=0;
+    InitializePeripherals();/* Initialize Peripherals */
     ChangeLEDState(LED_OFF);
-    while(1){
-        /*checks whether button sensor is ON or OFF */
-        if(BUTTON_SENSOR_ON){
-            /*checks whether heater button is ON or OFF */
-            if(HEATER_SENSOR_ON){
-                ChangeLEDState(LED_ON);
-                Temperature = ReadADC(ADCchannel);
-                OCR1A = Temperature;
-                DelayMilliSecond(200);
-            }
-            else ChangeLEDState(LED_OFF);
+    /*checks whether button sensor is ON or OFF */
+    if(BUTTON_SENSOR_ON){
+        /*checks whether heater button is ON or OFF */
+        if(HEATER_SENSOR_ON){
+            ChangeLEDState(LED_ON);
+            FLAG=1;
         }
-        else ChangeLEDState(LED_OFF);
+        else{
+            ChangeLEDState(LED_OFF);
+            FLAG=0;
+        }
     }
+    else {
+        ChangeLEDState(LED_OFF);
+        FLAG=0;
+    }
+    return FLAG;
 }

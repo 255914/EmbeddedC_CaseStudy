@@ -1,4 +1,4 @@
-PROJ_NAME = CaseStudyEmbedded
+PROJ_NAME = EmbeddedCaseStudy
 ELFFILE = $(PROJ_NAME).elf
 BUILD_DIR = Build
 
@@ -6,7 +6,8 @@ BUILD_DIR = Build
 SRC = project_main.c\
 src/activity1.c\
 src/activity2.c\
-src/activity3.c
+src/activity3.c\
+src/activity4.c
 
 # All header file paths
 INC = -I inc
