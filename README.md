@@ -16,7 +16,8 @@ Activities for Essentials of Embedded Systems
 ![ActivityOne](https://user-images.githubusercontent.com/80656121/115946531-7a36b500-a4df-11eb-8297-46d00c3f8a93.PNG)
 
 ## Activities 1,2,3 & 4 with CI
-![simulinkdiag](https://user-images.githubusercontent.com/80656121/116650629-36d8bc80-a99f-11eb-80e3-aad5477fe55a.PNG)
+![simulinkdiag](https://user-images.githubusercontent.com/80656121/116651442-d77bac00-a9a0-11eb-9c84-983fc3e4c346.PNG)
+
 #### CI and Code Quality
 
 |Build|Cppcheck|
