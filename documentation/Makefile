@@ -1,5 +1,5 @@
   
-DOXY_FILE = activityOne
+DOXY_FILE = EmbedCaseStudy
 doc:
 	doxygen ./$(DOXY_FILE)
 
