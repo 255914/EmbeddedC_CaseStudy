@@ -23,7 +23,7 @@
 int main(void)
 {
 	uint16_t Temp;
-	uint16_t ADCch=0;
+	uint8_t ADCch=0;
 	char TempTy;
 	/**
 	 * @brief Construct a new USARTInit object
