@@ -4,7 +4,7 @@
 /**
  * @file activity4.h
  * @author Souhardya Sengupta
- * @brief Activity4 in the embedded case study
+ * @brief CASE STUDY EMBEDDED - ACTIVITY 4
  * @version 0.1
  * @date 2021-04-29
  * 
