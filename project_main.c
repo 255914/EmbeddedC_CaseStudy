@@ -22,19 +22,37 @@
  */
 int main(void)
 {
-	uint16_t Temperature;
-	uint16_t ADCchannel=0;
-	char TempType;
-	
-	USARTInit(); /* Initialize Peripherals for UART */
+	uint16_t Temp;
+	uint16_t ADCch=0;
+	char TempTy;
+	/**
+	 * @brief Construct a new USARTInit object
+	 * Initialize Peripherals for UART
+	 */
+	USARTInit(); 
 	while(1){
 		uint8_t Status;
-		/* Turns LED ON if and only if both switches ButtonSensor and Heater are closed */
+		/**
+		 * @brief 
+		 * Turns LED ON if and only if both switches ButtonSensor and Heater are closed
+		 */
 		Status=StatusOfLedActuator();
 		if(Status==ON){
-			Temperature=ReadADC(ADCchannel); /*reads sensor data from ADCChannel*/
-    	    TempType=GeneratePWM(Temperature);/*Generates PWM according to data received from sensor*/
-			USARTWriteString(TempType);/*Sends data to serial monitor*/
+			/**
+			 * @brief 
+			 * reads sensor data from ADCChannel
+			 */
+			Temp=ReadADC(ADCch);
+			/**
+			 * @brief 
+			 * Generates PWM according to data received from sensor
+			 */
+    	    TempTy=GeneratePWM(Temp);
+			/**
+			 * @brief Construct a new USARTWriteString object
+			 * Sends data to serial monitor
+			 */
+			USARTWriteString(TempTy);
 		}
 	}
 	return 0;

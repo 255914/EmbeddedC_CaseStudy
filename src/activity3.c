@@ -1,8 +1,20 @@
+/**
+ * @file activity3.c
+ * @author Souhardya Sengupta
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "activity1.h"
 #include "activity3.h"
-
-#define DUTY_CYCLE(Percent) (1024*Percent/100)
 #define WRITE_PWM OCR1A
+#define DUTY_CYCLE(Percent) (1024*Percent/100)
+
+
+
 char GeneratePWM(uint16_t Temperature){
     InitializePWM();/* Initialize Peripherals for PWM */
     if(Temperature<=200){

@@ -3,8 +3,9 @@
 #include <avr/interrupt.h>
 #define BAUD 9600 // define baud 
 #define BAUDRATE ((F_CPU)/(BAUD*16UL)-1) // set baud rate value for UBRR
-#define DATA_IS_TRANSMITTING !(UCSR0A & (1<<UDRE0))
 #define DATA_IS_RECEIVING !(UCSR0A & (1<<RXC0))
+#define DATA_IS_TRANSMITTING !(UCSR0A & (1<<UDRE0))
+
 #define DATA UDR0
 void USARTWriteString(char letter){
     if(letter=='a'){
