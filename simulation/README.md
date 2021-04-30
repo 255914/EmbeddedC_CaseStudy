@@ -1,8 +1,6 @@
 # Case Study Project in Action
 
-|ON|OFF|
-|:--:|:--:|
-|\image html ON.png||
+![simulinkdiag](https://user-images.githubusercontent.com/80656121/116650629-36d8bc80-a99f-11eb-80e3-aad5477fe55a.PNG)
 
 ## Code 
 ```
