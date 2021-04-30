@@ -1,6 +1,7 @@
 # Case Study Project in Action
 
-![simulinkdiag](https://user-images.githubusercontent.com/80656121/116650629-36d8bc80-a99f-11eb-80e3-aad5477fe55a.PNG)
+![simulinkdiag](https://user-images.githubusercontent.com/80656121/116651442-d77bac00-a9a0-11eb-9c84-983fc3e4c346.PNG)
+
 
 ## Code 
 ```
